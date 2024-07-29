@@ -1,6 +1,3 @@
-# Author 
-# Rahul Kumar (Northeastern University)
-# Avnish Patel (Northeastern University)
 
 import pandas as pd
 import argparse
