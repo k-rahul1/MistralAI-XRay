@@ -1,0 +1,27 @@
+alpha: 0.4
+batch_size: 4
+bert_config: /home/avnish/CXR-ReDonE/ALBEF/configs/config_bert.json
+embed_dim: 256
+image_res: 256
+mlm_probability: 0.15
+momentum: 0.995
+optimizer:
+  lr: 1.0e-05
+  opt: adamW
+  weight_decay: 0.02
+queue_size: 65536
+schedular:
+  cooldown_epochs: 0
+  decay_rate: 1
+  epochs: 100
+  lr: 1.0e-05
+  min_lr: 1.0e-06
+  sched: cosine
+  warmup_epochs: 5
+  warmup_lr: 1.0e-06
+temp: 0.07
+test_file:
+- /home/avnish/Downloads/OpenI_dataset/test.json
+train_file:
+- /home/avnish/Downloads/OpenI_dataset/train.json
+vision_width: 768
