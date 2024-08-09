@@ -94,7 +94,7 @@ For evaluating the generated reports, CXR-Report-Metric to be used:
 ### Setup
 
 ```bash
-cd ../CXR-Report-Metric
+cd Training-Inference-Evaluation/CXR-Report-Metric
 conda create -n "cxr-report-metric" python=3.7.0 ipython
 conda activate cxr-report-metric
 pip install -r requirements.txt
@@ -105,6 +105,7 @@ pip install -r requirements.txt
 1. Use `prepare_df.py` to add the uid to the prediction from the Mistral AI.
 
 ```
+cd ../CXR-Report-Metric_CXR_ReDonE_code
 python prepare_df.py --fpath <input path> --opath <output path> --rpath <test report path>
 ```
 
@@ -113,12 +114,22 @@ python prepare_df.py --fpath <input path> --opath <output path> --rpath <test re
 3. Use `test_metric.py` to generate the scores.
 
 ```
+cd ../CXR-Report-Metric
 python test_metric.py
 ```
 
 4. Finally, use `evaluate_avgMetric.py` to output the average scores.
 
 ```
+cd ..
 python3 evaluate_avgMetric.py --fpath <input path>
 ```
 
+### Gradio Web-app
+
+1. Use `app_online.py` to run the Gradio based web-app locally.
+
+```
+cd Training-Inference-Evaluation/ALBEF
+python app_online.py 
+```
