@@ -80,6 +80,7 @@ Linked here are the ALBEF model checkpoints [with](https://www.dropbox.com/s/b4t
 ## Inference
 
 To run inference, run the following:
+download the [ollama](https://ollama.com/download) before running Mistral for inference
 
 ```bash
 cd Training-Inference-Evaluation
