@@ -68,7 +68,7 @@ conda activate cxr-repair-env
 
 ## Training
 
-To pretrain ALBEF, run:
+To train ALBEF using Open-i(IU Chest X-ray) dataset, run:
 
 ```bash
 cd Training-Inference-Evaluation/ALBEF
