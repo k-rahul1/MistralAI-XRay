@@ -78,9 +78,9 @@ sh train_script.sh
 Linked here are the ALBEF model checkpoints [with](https://www.dropbox.com/s/b4tkf2z4v6wa4zj/checkpoint_59.pth?dl=0) and [without](https://drive.google.com/file/d/183TClsB_fzCOHa6ESWfefV6EoN0EfmMI/view?usp=sharing) removing references to priors from the MIMIC-CXR reports corpus.
 
 ## Inference
-
+Download the [ollama](https://ollama.com/download) before running Mistral for inference
 To run inference, run the following:
-download the [ollama](https://ollama.com/download) before running Mistral for inference
+
 
 ```bash
 cd Training-Inference-Evaluation
